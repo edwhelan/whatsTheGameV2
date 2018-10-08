@@ -1,0 +1,6 @@
+body {
+  margin: 0;
+  background-image: url(../images/indexPic.jpg);
+  background-size: cover;
+  background-color: rgba(68, 82, 127, .9);
+}
