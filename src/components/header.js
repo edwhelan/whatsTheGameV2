@@ -3,8 +3,10 @@ import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
   <div
-    style={{
-      background: 'rgba(0, 0, 0, .8)',
+    style={{display: 'flex',
+    justifyContent: 'space-around',
+    'align-items': 'baseline'
+      
       // marginBottom: '1.45rem',
     }}
   >
@@ -23,6 +25,15 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div>
+      <Link to='/about'
+      style={{
+        color: 'white',
+        textDecoration: 'none',
+      }}>
+      about
+      </Link>
     </div>
   </div>
 )
