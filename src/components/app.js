@@ -29,7 +29,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App"  >
+      <div id="App" >
         <header className="App-header">          
           <h3 className="App-title">Baseball Games for {mm}/{dd}/{yyyy} </h3>
         </header>
@@ -47,12 +47,11 @@ class App extends React.Component {
           
           return (
             <div style={{
-              margin: 'auto',
               border: '2.5px solid #e0dbd1',
-              backgroundColor: 'rgba(68, 82, 127, .9)',
+              backgroundColor: 'rgba(203, 162, 6, .8)',
               color: 'rgba(0, 0, 0, .8)',
               textAlign: 'center',
-              width: 'auto'
+              width: '75%'
 
             }} key={user.id}>
             <p>
