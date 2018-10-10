@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const AboutPage = () => (
   <Layout>
-    <div
+    <section
     className= 'about-page'
     >
       <h3>About me and this project</h3>
@@ -16,7 +16,7 @@ const AboutPage = () => (
         color: 'white',
       }}
       >Go back to the games</Link>
-    </div>
+   </section>
   </Layout>
 )
 
