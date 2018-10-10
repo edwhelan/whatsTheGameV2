@@ -23,3 +23,5 @@ To show the current days baseballs games and allow for user to choose another in
 
 with use of https://www.gatsbyjs.com and MLB gameday API
 
+dependencies : react-datepicker and moment
+
