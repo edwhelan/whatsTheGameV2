@@ -11,6 +11,10 @@ body {
   align-items: center;  
 }
 
+#App div {
+  background: linear-gradient(to right, rgba(246,230,180,.8) 0%,rgba(237,144,23,.8) 100%);
+}
+
 .App-title {
   color: rgb(255, 255, 255)
 }

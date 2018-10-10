@@ -48,7 +48,6 @@ class App extends React.Component {
           return (
             <div style={{
               border: '2.5px solid #e0dbd1',
-              backgroundColor: 'rgba(203, 162, 6, .8)',
               color: 'rgba(0, 0, 0, .8)',
               textAlign: 'center',
               width: '75%'
