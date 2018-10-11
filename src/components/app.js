@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import DatePicker from 'react-datepicker'
+import moment from 'moment'
+import 'react-datepicker/dist/react-datepicker.css';
+
 
   // Declaring variables for date checking
 let today = new Date();
@@ -14,6 +18,31 @@ let yyyy = today.getFullYear();
  const url = 'https://gd.mlb.com/components/game/mlb/year_2011/month_09/day_20/master_scoreboard.json';
 
 
+ class Example extends React.Component {
+   constructor (props) {
+     super(props)
+     this.state = {
+       startDate: moment()
+     };
+     this.handleChange = this.handleChange.bind(this);
+   }
+ 
+   handleChange(date) {
+     this.setState({
+       startDate: date
+     });
+   }
+ 
+   render() {
+     return <DatePicker
+         selected={this.state.startDate}
+         onChange={this.handleChange}
+     />;
+   }
+ }
+ //let theDate = document.querySelector('input')
+ //theDate.value  = = = returns current selected value from datepicker
+ // can then split it into value
 
 
 class App extends React.Component {
@@ -32,6 +61,7 @@ class App extends React.Component {
       <div id="App" >
         <header className="App-header">          
           <h3 className="App-title">Baseball Games for {mm}/{dd}/{yyyy} </h3>
+          <Example />
         </header>
         {this.state.users.map(user => {
 
