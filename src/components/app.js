@@ -12,7 +12,6 @@ let ddPlus = (dd > 9) ? dd : `0` + dd;
 let mm = today.getMonth()+1;
 let mmPlus = (mm > 9) ? mm : `0` + mm;
 let yyyy = today.getFullYear();
-
 //var for correct url for gameday api
 // let url = `https://gd.mlb.com/components/game/mlb/year_${yyyy}/month_${mmPlus}/day_${ddPlus}/master_scoreboard.json`;
  const url = 'https://gd.mlb.com/components/game/mlb/year_2011/month_09/day_20/master_scoreboard.json';
@@ -36,6 +35,7 @@ let yyyy = today.getFullYear();
    render() {
      return <DatePicker
          selected={this.state.startDate}
+         onSelect= { console.log(this.state.startDate._d)}
          onChange={this.handleChange}
      />;
    }
